@@ -1,6 +1,6 @@
 {
   "name": "ep_social_preview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add pad title in meta tags",
   "main": "index.js",
   "scripts": {

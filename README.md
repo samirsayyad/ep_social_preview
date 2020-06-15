@@ -1,3 +1,12 @@
 # ep_social_preview
-If title set by ep_set_title_on_pad module will use that title for meta title generating 
-If noting set before will set untitle document
+
+If you want set below tags in header and make social preview follow the below items :
+
+<meta property="og:title" content="title" />
+<meta property="og:description" content="ep_meta_desc" />
+<meta property="og:image" content="meta_img_url" />
+
+
+If title configured by ep_set_title_on_pad module will use that title for meta title generating otherwise will set Untitle Document.
+
+You can set ep_meta_desc & ep_meta_img_url in setting.js
