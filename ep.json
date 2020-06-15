@@ -3,9 +3,9 @@
     {
       "name": "social_preview",
       "client_hooks": {
+        "handleTitle": "ep_social_preview/index"
       },
       "hooks": {
-        "exportFileName":"ep_social_preview/index"
       }
     }
   ]
