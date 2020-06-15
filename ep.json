@@ -3,7 +3,7 @@
     {
       "name": "social_preview",
       "client_hooks": {
-        "handleTitle": "ep_social_preview/static/js/index"
+        "handleClientMessage_CUSTOM": "ep_social_preview/static/js/index:handleClientMessage_CUSTOM"
       },
       "hooks": {
       }
