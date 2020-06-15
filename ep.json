@@ -4,11 +4,12 @@
       "name": "social_preview",
       "client_hooks": {
         "handleClientMessage_CUSTOM": "ep_social_preview/static/js/index:handleClientMessage_CUSTOM",
-        "clientVars":"ep_social_preview/index:clientVars",
         "postAceInit": "ep_social_preview/static/js/index:documentReady"
 
       },
       "hooks": {
+        "clientVars":"ep_social_preview/index"
+
       }
     }
   ]
