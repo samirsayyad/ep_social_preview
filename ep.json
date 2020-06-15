@@ -3,7 +3,7 @@
     {
       "name": "social_preview",
       "client_hooks": {
-        "handleTitle": "ep_social_preview/index"
+        "handleTitle": "ep_social_preview/static/js/index"
       },
       "hooks": {
       }
