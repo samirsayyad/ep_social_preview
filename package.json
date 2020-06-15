@@ -1,0 +1,23 @@
+{
+  "name": "ep_social_preview",
+  "version": "1.0.0",
+  "description": "Add pad title in meta tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samirsayyad/ep_social_preview.git"
+  },
+  "keywords": [
+    "Etherpad",
+    "Plugins"
+  ],
+  "author": "Samir Sayyad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samirsayyad/ep_social_preview/issues"
+  },
+  "homepage": "https://github.com/samirsayyad/ep_social_preview#readme"
+}

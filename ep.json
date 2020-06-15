@@ -1,0 +1,12 @@
+{
+  "parts": [
+    {
+      "name": "social_preview",
+      "client_hooks": {
+      },
+      "hooks": {
+        "exportFileName":"ep_social_preview/index"
+      }
+    }
+  ]
+}
