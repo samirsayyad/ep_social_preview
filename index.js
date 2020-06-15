@@ -20,5 +20,17 @@ exports.clientVars = function(hook, context, callback){
     console.warn("ep_meta_img_url: a ep_meta_img_url can be set in settings.json");
     meta_img_url = "";
   }
-  return callback({ "meta_desc": meta_desc , "meta_img_url" : meta_img_url });
+    //////////////////////////////////////////
+    var meta_default_title;
+    try {
+      if (settings.ep_meta_default_title){
+        meta_default_title = settings.ep_meta_default_title;
+      }
+    } catch (e){
+      console.warn("ep_meta_default_title: a ep_meta_default_title can be set in settings.json");
+      meta_default_title = "";
+    }
+
+
+  return callback({ "meta_desc": meta_desc , "meta_img_url" : meta_img_url , "meta_default_title" : meta_default_title });
 };

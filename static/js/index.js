@@ -4,7 +4,11 @@ exports.handleClientMessage_CUSTOM = function(hook, context, cb){
     if(message){
       $('head').append('<meta property="og:title" content="'+message+'" />');
     }else{
-      $('head').append('<meta property="og:title" content="Untitle Document" />');
+      if(clientVars.meta_default_title){
+        $('head').append('<meta property="og:title" content="'+clientVars.meta_default_title+'" />');
+      }else{
+        $('head').append('<meta property="og:title" content="Untitle Document" />');
+      }
     }
   }
 }
@@ -15,7 +19,6 @@ exports.documentReady = function(){
   }else{
     $('head').append('  <meta property="og:description" content="Untitle Document" />');
   }
-
   if(clientVars.meta_img_url){
     $('head').append('  <meta property="og:image" content="'+clientVars.meta_img_url+'" />');
 
