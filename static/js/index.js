@@ -8,3 +8,14 @@ exports.handleClientMessage_CUSTOM = function(hook, context, cb){
     }
   }
 }
+
+exports.documentReady = function(){
+  if (clientVars.meta_desc){
+    $('head').append('  <meta property="og:description" content="'+clientVars.meta_desc+'" />');
+  }else{
+    $('head').append('  <meta property="og:description" content="Untitle Document" />');
+  }
+
+
+  
+}
