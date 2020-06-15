@@ -16,6 +16,9 @@ exports.documentReady = function(){
     $('head').append('  <meta property="og:description" content="Untitle Document" />');
   }
 
+  if(clientVars.meta_img_url){
+    $('head').append('  <meta property="og:image" content="'+clientVars.meta_img_url+'" />');
 
+  }
   
 }

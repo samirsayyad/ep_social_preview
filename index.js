@@ -10,5 +10,15 @@ exports.clientVars = function(hook, context, callback){
     console.warn("ep_meta_desc: a ep_meta_desc can be set in settings.json");
     meta_desc = "";
   }
-  return callback({ "meta_desc": meta_desc });
+  //////////////////////////////////////////
+  var meta_img_url;
+  try {
+    if (settings.ep_meta_img_url){
+        meta_img_url = settings.ep_meta_img_url;
+    }
+  } catch (e){
+    console.warn("ep_meta_img_url: a ep_meta_img_url can be set in settings.json");
+    meta_img_url = "";
+  }
+  return callback({ "meta_desc": meta_desc , "meta_img_url" : meta_img_url });
 };
