@@ -7,7 +7,7 @@ exports.handleClientMessage_CUSTOM = function(hook, context, cb){
       if(clientVars.meta_default_title){
         $('head').append('<meta property="og:title" content="'+clientVars.meta_default_title+'" />');
       }else{
-        $('head').append('<meta property="og:title" content="Untitle Document" />');
+        $('head').append('<meta property="og:title" content="Untitled Document" />');
       }
     }
   }
@@ -17,7 +17,7 @@ exports.documentReady = function(){
   if (clientVars.meta_desc){
     $('head').append('  <meta property="og:description" content="'+clientVars.meta_desc+'" />');
   }else{
-    $('head').append('  <meta property="og:description" content="Untitle Document" />');
+    $('head').append('  <meta property="og:description" content="Untitled Document" />');
   }
   if(clientVars.meta_img_url){
     $('head').append('  <meta property="og:image" content="'+clientVars.meta_img_url+'" />');
